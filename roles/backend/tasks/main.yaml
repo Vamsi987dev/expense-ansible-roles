@@ -20,12 +20,6 @@
     ansible.builtin.import_role:
       name: common
       tasks_from: app-pre-req
-  
-  - name: unzip the application code
-    ansible.builtin.unarchive:
-      src: /tmp/backend.zip
-      dest: /app
-      remote_src: yes
 
   - name: install dependencies
     ansible.builtin.command: npm install
