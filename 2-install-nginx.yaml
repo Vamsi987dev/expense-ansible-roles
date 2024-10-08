@@ -1,5 +1,6 @@
 - name: install nginx on redhat
-  hosts: all
+  hosts: nginx
+  #hosts: all
   become: yes
   tasks:
     - name: install nginx
